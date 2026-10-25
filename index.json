@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "repository": {
+    "id": "playpex",
+    "name": "Playpex",
+    "key": "ed25519:jwgCJg+cIkeB3780604xy4dhMrngT4h4NJrT2Nas2cw="
+  },
+  "generatedAt": "2026-10-25T10:14:49.818Z",
+  "plugins": [
+    {
+      "id": "trakt",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://ihebbelhadj.github.io/playpex-official/trakt-1.0.0.ppx",
+          "sha256": "65ebde87ecb28a1ed6da9705818c939f46c1c5ace3999c6a1bf9f0b85b6e5b28",
+          "size": 7873,
+          "releasedAt": "2026-10-25",
+          "api": {
+            "server": "^1",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "api.trakt.tv"
+            ],
+            "storage": "5MB",
+            "secrets": [
+              "traktClientId",
+              "traktClientSecret"
+            ],
+            "hooks": [
+              "metadata.details"
+            ],
+            "events": [
+              "playback",
+              "watchlist"
+            ],
+            "schedule": true,
+            "write": [
+              "watchlist",
+              "watched",
+              "ratings"
+            ],
+            "link": [
+              "trakt"
+            ],
+            "notify": true
+          },
+          "lifecycle": "stable"
+        }
+      ],
+      "name": "Trakt",
+      "publisher": {
+        "name": "Playpex"
+      },
+      "icon": "https://ihebbelhadj.github.io/playpex-official/trakt-icon.svg",
+      "listing": {
+        "summary": "Scrobbles what you watch to Trakt, keeps your watch list, history and ratings in sync, and adds Trakt's ratings and rows.",
+        "license": "See licence.md",
+        "categories": [
+          "tracking",
+          "metadata",
+          "notifications"
+        ]
+      }
+    },
+    {
+      "id": "m3u",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://ihebbelhadj.github.io/playpex-official/m3u-1.0.0.ppx",
+          "sha256": "552d3f2f57c2e4a7b64e6bdf8d4e858cee9d5848f8758ff799ba6b470a7fb0af",
+          "size": 3889,
+          "releasedAt": "2026-10-25",
+          "api": {
+            "server": "^1",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "sources": [
+              "hls",
+              "live"
+            ],
+            "hooks": [
+              "live.channels",
+              "live.guide",
+              "live.stream"
+            ]
+          },
+          "lifecycle": "stable"
+        }
+      ],
+      "name": "Live TV (M3U)",
+      "publisher": {
+        "name": "Playpex"
+      },
+      "icon": "https://ihebbelhadj.github.io/playpex-official/m3u-icon.svg",
+      "listing": {
+        "summary": "Watch the channels of an M3U playlist (your IPTV subscription, or a public list) with a programme guide.",
+        "description": "Paste the address of an M3U playlist in its settings, and optionally of an XMLTV guide (else the one the playlist names). The channels show in a Live TV section with their programmes; the server plays HLS and MPEG-TS streams. The plugin carries no list of its own.",
+        "disclaimer": "Only add playlists you are allowed to watch. Playpex is an educational project.",
+        "license": "See licence.md",
+        "categories": [
+          "live"
+        ]
+      }
+    }
+  ]
+}
