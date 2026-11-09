@@ -6,6 +6,7 @@ The official plugin repository of [Playpex Media Server](https://github.com/Iheb
 |---|---|
 | `trakt` (Trakt) | scrobbles what a profile watches, keeps its watch list, history and ratings in sync with a Trakt account, adds Trakt's rating and rows to title pages and sections |
 | `m3u` (Live TV (M3U)) | the channels of an M3U playlist the admin gives (their IPTV subscription or a public list) with their XMLTV programme guide, in a Live TV section; carries no list of its own |
+| `youtube` (YouTube) | YouTube on the big screen: trending and category rows, search, channels and playlists through the YouTube Data API (the admin's key), a linked Google account's subscriptions, liked videos and playlists (read-only); videos play in YouTube's own player under Playpex's controls. Needs Playpex Media Server with plugin API 1.3 |
 
 ## Checking it
 
