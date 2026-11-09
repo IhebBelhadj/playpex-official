@@ -5,7 +5,7 @@
     "name": "Playpex",
     "key": "ed25519:jwgCJg+cIkeB3780604xy4dhMrngT4h4NJrT2Nas2cw="
   },
-  "generatedAt": "2026-11-09T20:58:42.790Z",
+  "generatedAt": "2026-11-09T21:12:12.431Z",
   "plugins": [
     {
       "id": "trakt",
@@ -71,6 +71,31 @@
       "id": "m3u",
       "versions": [
         {
+          "version": "1.1.0",
+          "url": "https://ihebbelhadj.github.io/playpex-official/m3u-1.1.0.ppx",
+          "sha256": "cb9ca9c3cee49a815fc210744712510ad1f293fc4b4486d284f8f7c4ad138bf3",
+          "size": 4913,
+          "releasedAt": "2026-11-09",
+          "api": {
+            "server": "^1",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "sources": [
+              "hls",
+              "live"
+            ],
+            "hooks": [
+              "live.channels",
+              "live.guide",
+              "live.stream"
+            ]
+          },
+          "lifecycle": "stable"
+        },
+        {
           "version": "1.0.0",
           "url": "https://ihebbelhadj.github.io/playpex-official/m3u-1.0.0.ppx",
           "sha256": "552d3f2f57c2e4a7b64e6bdf8d4e858cee9d5848f8758ff799ba6b470a7fb0af",
@@ -102,10 +127,10 @@
       },
       "icon": "https://ihebbelhadj.github.io/playpex-official/m3u-icon.svg",
       "listing": {
-        "summary": "Watch the channels of an M3U playlist (your IPTV subscription, or a public list) with a programme guide.",
-        "description": "Paste the address of an M3U playlist in its settings, and optionally of an XMLTV guide (else the one the playlist names). The channels show in a Live TV section with their programmes; the server plays HLS and MPEG-TS streams. The plugin carries no list of its own.",
+        "summary": "Watch the channels of your M3U playlists (IPTV subscriptions, public lists) with a programme guide.",
+        "description": "Paste the address of an M3U playlist in its settings, and optionally of an XMLTV guide (else the one the playlist names); up to 5 playlists, their channels shown together. The channels show in a Live TV section with their programmes; the server plays HLS and MPEG-TS streams. The plugin carries no list of its own.",
         "disclaimer": "Only add playlists you are allowed to watch. Playpex is an educational project.",
-        "license": "See licence.md",
+        "license": "PolyForm-Noncommercial-1.0.0",
         "categories": [
           "live"
         ]
@@ -114,6 +139,129 @@
     {
       "id": "youtube",
       "versions": [
+        {
+          "version": "1.0.6",
+          "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.6.ppx",
+          "sha256": "a879d295e645bab31317b6ad54b9b370ad262d4e588532d29e86ec7a71299f5e",
+          "size": 18289,
+          "releasedAt": "2026-11-09",
+          "api": {
+            "server": "^1.4",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "www.googleapis.com",
+              "oauth2.googleapis.com",
+              "i.ytimg.com",
+              "yt3.ggpht.com",
+              "yt3.googleusercontent.com"
+            ],
+            "rateLimit": {
+              "perSecond": 2,
+              "burst": 10,
+              "inFlight": 4
+            },
+            "storage": "2MB",
+            "secrets": [
+              "apiKey",
+              "clientId",
+              "clientSecret"
+            ],
+            "play": true,
+            "sources": [
+              "embed"
+            ],
+            "link": [
+              "google"
+            ]
+          },
+          "lifecycle": "stable"
+        },
+        {
+          "version": "1.0.5",
+          "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.5.ppx",
+          "sha256": "e115730c1ba309342fe9a1f62ad695352052aef2730f99857263d0bf4a28b45e",
+          "size": 18222,
+          "releasedAt": "2026-11-09",
+          "api": {
+            "server": "^1.3",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "www.googleapis.com",
+              "oauth2.googleapis.com",
+              "i.ytimg.com",
+              "yt3.ggpht.com",
+              "yt3.googleusercontent.com"
+            ],
+            "rateLimit": {
+              "perSecond": 2,
+              "burst": 10,
+              "inFlight": 4
+            },
+            "storage": "2MB",
+            "secrets": [
+              "apiKey",
+              "clientId",
+              "clientSecret"
+            ],
+            "play": true,
+            "sources": [
+              "embed"
+            ],
+            "link": [
+              "google"
+            ]
+          },
+          "lifecycle": "stable"
+        },
+        {
+          "version": "1.0.4",
+          "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.4.ppx",
+          "sha256": "33da8e3d08f520a3fe6adf007415efbcbc4884a436dfbee976c35fdf80a1ca10",
+          "size": 17927,
+          "releasedAt": "2026-11-09",
+          "api": {
+            "server": "^1.3",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "www.googleapis.com",
+              "oauth2.googleapis.com",
+              "i.ytimg.com",
+              "yt3.ggpht.com",
+              "yt3.googleusercontent.com"
+            ],
+            "rateLimit": {
+              "perSecond": 2,
+              "burst": 10,
+              "inFlight": 4
+            },
+            "storage": "2MB",
+            "secrets": [
+              "apiKey",
+              "clientId",
+              "clientSecret"
+            ],
+            "play": true,
+            "sources": [
+              "embed"
+            ],
+            "link": [
+              "google"
+            ]
+          },
+          "lifecycle": "stable"
+        },
         {
           "version": "1.0.3",
           "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.3.ppx",
