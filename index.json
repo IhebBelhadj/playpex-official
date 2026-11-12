@@ -5,7 +5,7 @@
     "name": "Playpex",
     "key": "ed25519:jwgCJg+cIkeB3780604xy4dhMrngT4h4NJrT2Nas2cw="
   },
-  "generatedAt": "2026-11-09T21:12:12.431Z",
+  "generatedAt": "2026-11-12T17:24:51.744Z",
   "plugins": [
     {
       "id": "trakt",
@@ -71,6 +71,31 @@
       "id": "m3u",
       "versions": [
         {
+          "version": "2.0.0",
+          "url": "https://ihebbelhadj.github.io/playpex-official/m3u-2.0.0.ppx",
+          "sha256": "17a1959a87cd203f8fa16910b262358ea852121aab0b68d42cc1fb6c44c22fbe",
+          "size": 5804,
+          "releasedAt": "2026-11-12",
+          "api": {
+            "server": "^1.5",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "sources": [
+              "hls",
+              "live"
+            ],
+            "hooks": [
+              "live.channels",
+              "live.guide",
+              "live.stream"
+            ]
+          },
+          "lifecycle": "stable"
+        },
+        {
           "version": "1.1.0",
           "url": "https://ihebbelhadj.github.io/playpex-official/m3u-1.1.0.ppx",
           "sha256": "cb9ca9c3cee49a815fc210744712510ad1f293fc4b4486d284f8f7c4ad138bf3",
@@ -128,7 +153,7 @@
       "icon": "https://ihebbelhadj.github.io/playpex-official/m3u-icon.svg",
       "listing": {
         "summary": "Watch the channels of your M3U playlists (IPTV subscriptions, public lists) with a programme guide.",
-        "description": "Paste the address of an M3U playlist in its settings, and optionally of an XMLTV guide (else the one the playlist names); up to 5 playlists, their channels shown together. The channels show in a Live TV section with their programmes; the server plays HLS and MPEG-TS streams. The plugin carries no list of its own.",
+        "description": "Paste the address of an M3U playlist in its settings, and optionally of an XMLTV guide (else the one the playlist names); up to 20 playlists, their channels shown together. The channels show in a Live TV section with their programmes; the server plays HLS and MPEG-TS streams. The plugin carries no list of its own.",
         "disclaimer": "Only add playlists you are allowed to watch. Playpex is an educational project.",
         "license": "PolyForm-Noncommercial-1.0.0",
         "categories": [
