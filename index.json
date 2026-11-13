@@ -5,7 +5,7 @@
     "name": "Playpex",
     "key": "ed25519:jwgCJg+cIkeB3780604xy4dhMrngT4h4NJrT2Nas2cw="
   },
-  "generatedAt": "2026-11-12T17:24:51.744Z",
+  "generatedAt": "2026-11-13T13:42:09.222Z",
   "plugins": [
     {
       "id": "trakt",
@@ -164,6 +164,47 @@
     {
       "id": "youtube",
       "versions": [
+        {
+          "version": "1.0.7",
+          "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.7.ppx",
+          "sha256": "a0a449d10b6b6a798dc13411b0dc9ad1ee3f5e55b0c3bf75a24d756c0c39fd38",
+          "size": 19922,
+          "releasedAt": "2026-11-13",
+          "api": {
+            "server": "^1.4",
+            "nav": "^1",
+            "ui": "^1"
+          },
+          "audience": "everyone",
+          "permissions": {
+            "network": [
+              "www.googleapis.com",
+              "oauth2.googleapis.com",
+              "i.ytimg.com",
+              "yt3.ggpht.com",
+              "yt3.googleusercontent.com"
+            ],
+            "rateLimit": {
+              "perSecond": 2,
+              "burst": 10,
+              "inFlight": 4
+            },
+            "storage": "2MB",
+            "secrets": [
+              "apiKey",
+              "clientId",
+              "clientSecret"
+            ],
+            "play": true,
+            "sources": [
+              "embed"
+            ],
+            "link": [
+              "google"
+            ]
+          },
+          "lifecycle": "stable"
+        },
         {
           "version": "1.0.6",
           "url": "https://ihebbelhadj.github.io/playpex-official/youtube-1.0.6.ppx",
